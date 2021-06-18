@@ -1,6 +1,5 @@
 import Layout from '../components/Layout'
-import Link from 'next/link';
-import Image from 'next/image'
+import Link from 'next/link'
 
 
 export default function Home({ pokemon }) {
@@ -13,7 +12,7 @@ export default function Home({ pokemon }) {
                     <li key={index}>
                         <Link href={`/pokemon/${index + 1}`}>
                             <a className="border p-4 border-grey my-2 hover:shadow-md capitalize flex items-center text-lg bg-gray-200 rounded-md">
-                                <Image
+                                <img
                                     src={item.image}
                                     alt={item.name}
                                     className="w-20 h-20 mr-3"
