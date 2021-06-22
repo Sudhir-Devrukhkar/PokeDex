@@ -31,7 +31,7 @@ export default function Home({ pokemon }) {
 }
 
 export const getStaticProps = async () => {
-    const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=150');
+    const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=898');
     const { results }  = await res.json();
     const pokemon = results.map((pokeman, index) => {
         const paddedId = ('00' + (index + 1)).slice(-3);
